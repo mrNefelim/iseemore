@@ -1,0 +1,13 @@
+index:
+    path: /api/video/{lastId?}
+    controller: App\YoutubeBundle\Controller\YoutubeController::index
+    requirements:
+        page: '\d+'
+delete:
+    path: /api/delete/{id}
+    controller: App\YoutubeBundle\Controller\YoutubeController::delete
+    requirements:
+        page: '\d+'
+count:
+    path: /api/count
+    controller: App\YoutubeBundle\Controller\YoutubeController::count
