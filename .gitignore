@@ -2,3 +2,5 @@ node_modules
 env/database
 env/log
 etc
+.idea
+docker-compose.override.yml

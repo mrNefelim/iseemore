@@ -24,7 +24,6 @@
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/doctrine/sql-formatter" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/nesbot/carbon" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/nikic/php-parser" />
-      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/ocramius/proxy-manager" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/phpdocumentor/reflection-common" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/phpdocumentor/reflection-docblock" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/phpdocumentor/type-resolver" />
@@ -48,7 +47,6 @@
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/symfony/finder" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/symfony/flex" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/symfony/framework-bundle" />
-      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/symfony/http-client-contracts" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/symfony/http-foundation" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/symfony/http-kernel" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/symfony/maker-bundle" />
@@ -70,8 +68,20 @@
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/symfony/var-exporter" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/symfony/yaml" />
       <excludeFolder url="file://$MODULE_DIR$/backend/vendor/webmozart/assert" />
-      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/zendframework/zend-code" />
-      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/zendframework/zend-eventmanager" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/ralouphie/getallheaders" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/irazasyed/telegram-bot-sdk" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/guzzlehttp/promises" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/guzzlehttp/psr7" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/guzzlehttp/guzzle" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/illuminate/contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/illuminate/support" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/psr/http-message" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/psr/simple-cache" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/symfony/polyfill-intl-idn" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/laminas/laminas-code" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/friendsofphp/proxy-manager-lts" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/symfony/polyfill-php81" />
+      <excludeFolder url="file://$MODULE_DIR$/backend/vendor/doctrine/deprecations" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
