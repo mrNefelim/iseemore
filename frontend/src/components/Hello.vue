@@ -16,4 +16,8 @@ export default {
 .hello {
   padding: 40px;
 }
+.hello {
+  max-width: 720px;
+  padding: 2px;
+}
 </style>

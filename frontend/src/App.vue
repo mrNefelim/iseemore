@@ -28,6 +28,7 @@ html, body {
 html {
   background-image: url('~@/assets/background.jpg');
   background-size: cover;
+  background-position: center;
 }
 
 #app {
@@ -42,4 +43,14 @@ html {
   text-align: center;
   color: #fff;
 }
+
+@media (min-height: 720px) {
+  #app {
+    padding-top: 90px;
+  }
+  .hello {
+    margin-bottom: 80px;
+  }
+}
+
 </style>

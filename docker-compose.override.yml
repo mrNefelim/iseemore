@@ -5,7 +5,7 @@ services:
     image: nginx:1.17.8
     container_name: youtube_nginx
     ports:
-      - 1001:81
+      - 1001:1001
     volumes:
       - ./backend:/var/www/html/youtube
       - ./env/log/nginx:/var/log/nginx/

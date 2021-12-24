@@ -54,7 +54,7 @@
 
     .button {
         display: block;
-        margin: 0 auto;
+        margin: 10px auto 0;
         padding: 10px 20px;
         cursor: pointer;
         background: transparent;
