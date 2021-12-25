@@ -5,7 +5,7 @@ services:
     image: nginx:1.17.8
     container_name: iseemore_nginx
     ports:
-      - 81:81
+      - 1001:1001
     volumes:
       - ./backend:/var/www/html/iseemore
       - ./env/log/nginx:/var/log/nginx/
