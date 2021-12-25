@@ -1,8 +1,8 @@
 <?php
 
-namespace App\YoutubeBundle\Entity;
+namespace App\IseemoreBundle\Entity;
 
-use App\YoutubeBundle\Repository\VideoRepository;
+use App\IseemoreBundle\Repository\VideoRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 /**

@@ -1,8 +1,8 @@
 <?php
 
-namespace App\YoutubeBundle\Repository;
+namespace App\IseemoreBundle\Repository;
 
-use App\YoutubeBundle\Entity\Video;
+use App\IseemoreBundle\Entity\Video;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\YoutubeBundle\Service;
+namespace App\IseemoreBundle\Service;
 
 use Carbon\Carbon;
 use GuzzleHttp\Client as GuzzleClient;

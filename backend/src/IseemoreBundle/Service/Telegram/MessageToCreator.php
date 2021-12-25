@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\YoutubeBundle\Service\Telegram;
+namespace App\IseemoreBundle\Service\Telegram;
 
 
 use Telegram\Bot\Api as TelegramApi;

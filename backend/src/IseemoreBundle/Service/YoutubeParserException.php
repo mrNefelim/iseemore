@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\YoutubeBundle\Service;
+namespace App\IseemoreBundle\Service;
 
 use Exception;
 

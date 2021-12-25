@@ -13,6 +13,6 @@ doctrine:
             App:
                 is_bundle: false
                 type: annotation
-                dir: '%kernel.project_dir%/src/YoutubeBundle/Entity'
-                prefix: 'App\YoutubeBundle\Entity'
+                dir: '%kernel.project_dir%/src/IseemoreBundle/Entity'
+                prefix: 'App\IseemoreBundle\Entity'
                 alias: App

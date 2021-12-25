@@ -1,12 +1,12 @@
 <?php
 
-namespace App\YoutubeBundle\Command;
+namespace App\IseemoreBundle\Command;
 
-use App\YoutubeBundle\Entity\Video;
-use App\YoutubeBundle\Service\Telegram\MessageToCreator;
-use App\YoutubeBundle\Service\Telegram\SendMessageException;
-use App\YoutubeBundle\Service\YoutubeParser;
-use App\YoutubeBundle\Service\YoutubeParserException;
+use App\IseemoreBundle\Entity\Video;
+use App\IseemoreBundle\Service\Telegram\MessageToCreator;
+use App\IseemoreBundle\Service\Telegram\SendMessageException;
+use App\IseemoreBundle\Service\YoutubeParser;
+use App\IseemoreBundle\Service\YoutubeParserException;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;

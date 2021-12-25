@@ -1,32 +1,32 @@
 version: "3.7"
 
 services:
-  youtube_nginx:
+  iseemore_nginx:
     image: nginx:1.17.8
-    container_name: youtube_nginx
+    container_name: iseemore_nginx
     ports:
       - 81:81
     volumes:
-      - ./backend:/var/www/html/youtube
+      - ./backend:/var/www/html/iseemore
       - ./env/log/nginx:/var/log/nginx/
       - ./env/nginx/conf.d/:/etc/nginx/conf.d/
     links:
-      - youtube_backend:youtube_backend
+      - iseemore_backend:iseemore_backend
     networks:
-      youtube:
+      iseemore:
         ipv4_address: 172.30.0.50
 
-  youtube_backend:
+  iseemore_backend:
     build: ./env/backend/
-    container_name: youtube_backend
+    container_name: iseemore_backend
     volumes:
-      - ./backend:/var/www/html/youtube
+      - ./backend:/var/www/html/iseemore
     networks:
-       - youtube
+       - iseemore
 
-  youtube_mysql:
+  iseemore_mysql:
     image: mysql:5.7
-    container_name: youtube_mysql
+    container_name: iseemore_mysql
     restart: always
     ports:
       - 33061:3306
@@ -35,20 +35,20 @@ services:
     volumes:
       - ./env/database:/var/lib/mysql
     networks:
-      - youtube
+      - iseemore
 
-  youtube_frontend:
+  iseemore_frontend:
     build: ./env/frontend/
-    container_name: youtube_frontend
+    container_name: iseemore_frontend
     volumes:
       - ./frontend:/web
     ports:
       - 8080:8080
     networks:
-      - youtube
+      - iseemore
 
 networks:
-  youtube:
+  iseemore:
     ipam:
       driver: default
       config:

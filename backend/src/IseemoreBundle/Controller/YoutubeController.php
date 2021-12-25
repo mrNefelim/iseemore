@@ -1,8 +1,8 @@
 <?php
 
-namespace App\YoutubeBundle\Controller;
+namespace App\IseemoreBundle\Controller;
 
-use App\YoutubeBundle\Entity\Video;
+use App\IseemoreBundle\Entity\Video;
 use Doctrine\ORM\NonUniqueResultException;
 use Doctrine\ORM\NoResultException;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;

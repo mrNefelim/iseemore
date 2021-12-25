@@ -2,6 +2,6 @@ parameters:
   youtube.api:
     url: 'https://youtube.googleapis.com/youtube/v3/'
 services:
-  YoutubeBundle\Service\MessageGenerator:
+  IseemoreBundle\Service\MessageGenerator:
     arguments:
       url: '@youtube.api.url'

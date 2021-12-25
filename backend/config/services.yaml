@@ -21,6 +21,6 @@ services:
       - '../src/Kernel.php'
       - '../src/Tests/'
 
-  App\YoutubeBundle\Controller\:
-    resource: '../src/YoutubeBundle/Controller/'
+  App\IseemoreBundle\Controller\:
+    resource: '../src/IseemoreBundle/Controller/'
     tags: ['controller.service_arguments']

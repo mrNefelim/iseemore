@@ -1,29 +1,29 @@
 services:
-  App\YoutubeBundle\Service\YoutubeParser:
+  App\IseemoreBundle\Service\YoutubeParser:
     arguments:
       $url: '%env(string:YOUTUBE_API_URL)%'
       $key: '%env(string:YOUTUBE_API_KEY)%'
 
-  App\YoutubeBundle\Service\Telegram\MessageToCreator:
+  App\IseemoreBundle\Service\Telegram\MessageToCreator:
     arguments:
       $token: '%env(string:TELEGRAM_API_TOKEN)%'
       $creatorId: '%env(string:TELEGRAM_API_CREATOR_ID)%'
 
-  App\YoutubeBundle\Command\ParseYoutubeVideosCommand:
+  App\IseemoreBundle\Command\ParseYoutubeVideosCommand:
     arguments:
       $entityManager: '@doctrine.orm.default_entity_manager'
       $name: 'parse_youtube_videos'
-      $parser: '@App\YoutubeBundle\Service\YoutubeParser'
-      $sender: '@App\YoutubeBundle\Service\Telegram\MessageToCreator'
+      $parser: '@App\IseemoreBundle\Service\YoutubeParser'
+      $sender: '@App\IseemoreBundle\Service\Telegram\MessageToCreator'
     tags: [console.command]
 
-  App\YoutubeBundle\Controller\:
-    resource: '../src/YoutubeBundle/Controller'
+  App\IseemoreBundle\Controller\:
+    resource: '../src/IseemoreBundle/Controller'
     tags: ['controller.service_arguments']
     calls:
       - [setContainer, ['@Psr\Container\ContainerInterface']]
 
-  App\YoutubeBundle\Repository\:
-    resource: '../src/YoutubeBundle/Repository'
+  App\IseemoreBundle\Repository\:
+    resource: '../src/IseemoreBundle/Repository'
     autowire: true
     tags: ['doctrine.repository_service']
