@@ -19,16 +19,20 @@ class YoutubeController extends AbstractController
      */
     public function index(int $lastId): Response
     {
-        $video = null;
+        try {
+            $video = null;
 
-        while ($video == null) {
-            if (empty($lastId)) {
-                $lastId = rand(1, $this->getCount());
+            while ($video == null) {
+                if (empty($lastId)) {
+                    $lastId = rand(1, $this->getCount());
+                }
+
+                $video = $this->getNextVideo($lastId);
             }
+        } catch (\Throwable $exception) {
+            dd($exception);
 
-            $video = $this->getNextVideo($lastId);
         }
-
         return $this->json($video);
     }
 

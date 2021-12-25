@@ -18,6 +18,8 @@ services:
 
   iseemore_backend:
     image: mrnefelim/youtube-backend:latest
+    ports:
+      - 9000:9000
     container_name: iseemore_backend
     volumes:
       - ./backend:/var/www/html/iseemore
